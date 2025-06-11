@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounter - Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Accounter</h1>
+
+        <!-- Settings Section -->
+        <div class="settings-section" id="settings-section">
+            <h2>Registered Sites</h2>
+
+            <!-- No sites message -->
+            <div id="no-sites" style="display: none;">
+                <p class="no-accounts-message">No registered sites.</p>
+            </div>
+
+            <!-- Sites container -->
+            <div id="sites-container">
+                <!-- Sites will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Site Registration Form Section -->
+        <div class="registration-form" id="site-registration-form-section" style="display: none;">
+            <h2>Register New Site</h2>
+            <form id="site-registration-form">
+                <div class="form-group">
+                    <label for="site-name">Site Name:</label>
+                    <input type="text" id="site-name" name="site-name" required>
+                </div>
+                <div class="form-group" id="domain-display" style="display: none;">
+                    <label>Domain:</label>
+                    <div id="domain-value" class="domain-display-value"></div>
+                </div>
+                <div id="key-pairs-container">
+                    <div class="key-pair">
+                        <div class="key-pair-content">
+                            <div class="form-group storage-type-container">
+                                <label for="storage-type-0">Storage Type:</label>
+                                <div class="storage-type-wrapper">
+                                    <select id="storage-type-0" name="storage-type-0" class="storage-type" required>
+                                        <option value="session">Session</option>
+                                        <option value="cookie">Cookie</option>
+                                        <option value="local">Local</option>
+                                    </select>
+                                    <button type="button" class="remove-key-pair" style="display: none;">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="key-value-0">Key:</label>
+                                <select id="key-value-0" name="key-value-0" class="key-value" required>
+                                    <option value="" disabled selected>Select a key</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="add-key-pair" class="add-button">Add Another Key</button>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" id="cancel-btn" class="cancel-button">Cancel</button>
+                    <button type="submit" id="save-site-btn" class="save-button">Save</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Bottom Menu -->
+        <div class="bottom-menu">
+            <div class="menu-item" id="archive-menu">
+                <i class="menu-icon fas fa-archive"></i>
+                <span>보관함</span>
+            </div>
+            <div class="menu-item" id="register-menu">
+                <i class="menu-icon fas fa-plus"></i>
+                <span>등록</span>
+            </div>
+            <div class="menu-item active" id="settings-menu">
+                <i class="menu-icon fas fa-cog"></i>
+                <span>설정</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

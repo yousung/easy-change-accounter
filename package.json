@@ -1,0 +1,18 @@
+{
+  "name": "accounter",
+  "version": "1.0.0",
+  "description": "A Chrome extension for tracking and managing expenses",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step required for Chrome extension\"",
+    "zip": "zip -r accounter.zip manifest.json popup.html popup.js background.js styles.css icons/"
+  },
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "accounting",
+    "expense-tracker"
+  ]
+}

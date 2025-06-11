@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Accounter</h1>
+
+        <!-- Account List Section -->
+        <div class="account-list">
+            <!-- Example: No accounts -->
+            <div id="no-accounts">
+                <p class="no-accounts-message">등록된 계정이 없습니다.</p>
+            </div>
+
+            <!-- Example: Account list with items (hidden) -->
+            <div id="accounts-container" style="display: none;">
+                <!-- Account Item 1 -->
+                <div class="account-item">
+                    <div class="account-name">Google 계정</div>
+                    <div class="account-actions">
+                        <button class="action-button settings-button">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                        <button class="action-button delete-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Account Item 2 -->
+                <div class="account-item">
+                    <div class="account-name">네이버 계정</div>
+                    <div class="account-actions">
+                        <button class="action-button settings-button">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                        <button class="action-button delete-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Account Item 3 -->
+                <div class="account-item">
+                    <div class="account-name">카카오 계정</div>
+                    <div class="account-actions">
+                        <button class="action-button settings-button">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                        <button class="action-button delete-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Menu -->
+        <div class="bottom-menu">
+            <div class="menu-item active">
+                <i class="menu-icon fas fa-archive"></i>
+                <span>보관함</span>
+            </div>
+            <div class="menu-item">
+                <i class="menu-icon fas fa-plus"></i>
+                <span>등록</span>
+            </div>
+            <div class="menu-item">
+                <i class="menu-icon fas fa-cog"></i>
+                <span>설정</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
