@@ -1,16 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Accounter",
+  "name": "Accounter - Easy Account Switcher",
   "version": "1.0.0",
-  "description": "easy change account",
+  "description": "Easily switch between different account information by manipulating cookie, session storage, and local storage data",
   "action": {
     "default_popup": "index.html",
     "default_icon": "icons/icon.png"
+  },
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
   },
   "permissions": [
     "storage",
     "tabs",
     "scripting",
     "activeTab"
-  ]
+  ],
+  "author": "Accounter Team"
 }
